@@ -12,7 +12,7 @@ public class CreateTableExample {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/Mydatabase", "root", "");
 			Statement statement=connection.createStatement();
-			String str="create table Lingesh"
+			String str="create table Class"
 					+"(stdId int,"
 					+"stname varchar(30),"
 					+"marks double,"
