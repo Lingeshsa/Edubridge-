@@ -17,7 +17,6 @@ public static Statement getStatement() throws ClassNotFoundException, SQLExcepti
 public static int insertData() throws ClassNotFoundException, SQLException{
 	Statement statement=getStatement();
 	String str= "insert into Lingesh values(100,'V',98.76,'8672324378') ";
-	
 	int res=statement.executeUpdate(str);
 	return res;
 }
@@ -26,7 +25,7 @@ public static int insertData() throws ClassNotFoundException, SQLException{
 		try {
 			int res= insertData();
 			if(res==1) {
-				System.out.println("Insert successful");
+	 			System.out.println("Insert successful");
 			}
 			
 		} catch (ClassNotFoundException e) {
